@@ -1,0 +1,9 @@
+           .percentage {
+               height: 100px;
+               width: 0px;
+               background-color: chartreuse;
+           }
+
+           #txtName {
+               width: 185px;
+           }
