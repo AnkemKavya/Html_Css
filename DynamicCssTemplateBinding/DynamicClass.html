@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic class</title>
+        <link rel="stylesheet" href="../Styles/DynamicClass.css">
+        <script defer>
+            function onClickOpen() {
+                debugger;
+                alert("clicked");
+                document.getElementById("divResult").classList.add("page")
+            }
+            function onClickBack() {
+                debugger;
+                alert("onclicked");
+                document.getElementById("divResult").classList.remove("page")
+            }
+            function ToggleEvent() {
+                document.getElementById("divResult").classList.toggle("page")
+            }
+        </script>
+    </head>
+    <body>
+        <div id="divResult">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.dSfDR9CqAoNnog0RVrOlcgHaHa?pid=Api&P=0&h=180"></div>
+                <p style="justify-content: center;">This is my page</p>
+        
+                <button id="btnOpen" class="open-btn" onclick="onClickOpen()">open</button>
+                <button id="btnBack" class="back-btn" onclick="onClickBack()">Back</button>
+                <button id="btntoggle" onmouseover="ToggleEvent()">next</button>
+    </body>
+</html>
